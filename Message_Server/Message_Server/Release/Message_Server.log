@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-  Comm.cpp
-  Message_Server.cpp
-  Generating code
-  All 18 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  Message_Server.vcxproj -> C:\Users\ravingupta\Documents\Projects\Projects_C++\SystemProj\Release\Message_Server.exe
-  Message_Server.vcxproj -> C:\Users\ravingupta\Documents\Projects\Projects_C++\SystemProj\Release\Message_Server.pdb (Full PDB)
