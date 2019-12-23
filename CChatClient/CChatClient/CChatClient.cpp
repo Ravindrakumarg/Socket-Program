@@ -127,7 +127,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 	} while(false);
 
-	chat_client.chatWithServer();
+//	chat_client.chatWithServer();
 
 	return 0;
 }

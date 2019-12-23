@@ -1,20 +1,31 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Message_Server", "Message_Server\Message_Server.vcxproj", "{01076580-F9FA-45FB-A93B-8C8DCC53B865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Debug|Win32.ActiveCfg = Debug|Win32
 		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Debug|Win32.Build.0 = Debug|Win32
+		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Debug|x64.ActiveCfg = Debug|x64
+		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Debug|x64.Build.0 = Debug|x64
 		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Release|Win32.ActiveCfg = Release|Win32
 		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Release|Win32.Build.0 = Release|Win32
+		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Release|x64.ActiveCfg = Release|x64
+		{01076580-F9FA-45FB-A93B-8C8DCC53B865}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26BF4185-F32D-4BD3-91D4-579DB0D1FD4F}
 	EndGlobalSection
 EndGlobal
