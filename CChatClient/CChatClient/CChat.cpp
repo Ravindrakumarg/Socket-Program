@@ -12,8 +12,8 @@
 #include "string.h"
 
 
-#define DEFAULT_PORT		5678	/* Porn on which server is listening */
-#define SERVER_IP			"127.0.0.1"
+#define SERVER_PORT		5678			/* Port on which server is listening */
+#define SERVER_IP			"127.0.0.1"		/* server address as server is running on same machine */
 
 /* Initializing the client socket for communicating with server*/
 int
@@ -28,7 +28,7 @@ CChatClient :: initializeClient(void)
 
 	__client_address.sin_family = AF_INET;						/* internet Communication */
 	__client_address.sin_addr.s_addr = inet_addr(SERVER_IP);	/* Server address*/
-	__client_address.sin_port = DEFAULT_PORT;					/* Listening to this port */
+	__client_address.sin_port = SERVER_PORT;					/* Server Listening on this port */
 
 	/* Creating client socket */
 	__client_socket = socket (AF_INET, SOCK_STREAM, IPPROTO_TCP);

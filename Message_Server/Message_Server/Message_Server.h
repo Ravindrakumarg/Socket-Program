@@ -17,13 +17,8 @@
 
 #define EXIT_ON_ERROR exit(0);
 
-
 class CMessageServer
 {
-private:
-	SOCKADDR_IN __server_address;
-	SOCKET		__server_socket;
-	WSADATA		__ws_adata;
 public:
 	CMessageServer()
 	{
@@ -45,5 +40,11 @@ public:
 
 public:
 	SOCKET		__client_socket;
+
+private:
+	SOCKADDR_IN	__server_address;		// Variable to Hold Server Address
+	SOCKET		__server_socket;		// Server socket
+	WSADATA		__ws_adata;
+
 };
 #endif //__MESSAGE_SERVER__

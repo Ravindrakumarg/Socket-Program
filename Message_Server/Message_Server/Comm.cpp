@@ -19,7 +19,7 @@ CMessageServer :: initialise_server ()
 {
 	HRESULT result;
 
-	if (WSAStartup(0x0202,&__ws_adata)!=0)
+	if (WSAStartup(0x0202, &__ws_adata) != 0)
 	{
 		PRINTE "winsock initialization failed"<<"\n"<<std::endl;
 		WSACleanup ();

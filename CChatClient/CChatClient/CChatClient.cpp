@@ -89,17 +89,16 @@ CChatClient :: chatWithServer (void)
 	int send = 1, recv = 2;
 	do
 	{
-		hThread = _beginthread(&CChatClient::run_thread, 0, (void *)send);	/* Sending message to server */
+//		hThread = _beginthread(&CChatClient::run_thread, 0, (void *)send);	/* Sending message to server */
 		
-		//sendMessage();
-		//receivebytes = receiveMessage();				/* Receiving Message from server */
+		sendMessage();
+		receivebytes = receiveMessage();				/* Receiving Message from server */
 
 		if (receivebytes <= 0)
 		{
 			PRINTE "Error on receving server message" << "\n";
 		}
 	}while (receivebytes > 0);
-
 }
 
 void
@@ -127,7 +126,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		}
 	} while(false);
 
-//	chat_client.chatWithServer();
+	chat_client.chatWithServer();
 
 	return 0;
 }

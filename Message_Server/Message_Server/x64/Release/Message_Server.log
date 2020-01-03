@@ -1,7 +1,0 @@
-﻿  stdafx.cpp
-  Comm.cpp
-  Message_Server.cpp
-  Generating code
-  All 18 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  Message_Server.vcxproj -> D:\Programs\C & C++\Projects\Socket-Program\Message_Server\x64\Release\Message_Server.exe
