@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-  CChat.cpp
-  CChatClient.cpp
-  Generating code
-  All 326 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-d:\programs\c & c++\projects\socket-program\cchatclient\cchatclient\cchatclient.cpp(97): warning C4700: uninitialized local variable 'receivebytes' used
-  Finished generating code
-  CChatClient.vcxproj -> D:\Programs\C & C++\Projects\Socket-Program\CChatClient\Release\CChatClient.exe
