@@ -22,7 +22,7 @@
 class CChatClient : public CThreadRunnable
 {
 private:
-	SOCKADDR_IN __client_address;
+	SOCKADDR_IN __server_address;
 	SOCKET		__client_socket;
 	WSADATA		__ws_adata;
 

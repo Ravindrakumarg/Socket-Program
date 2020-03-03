@@ -22,11 +22,11 @@ extern "C"
 
 /* Connecting to the Message Server */
 int
-CChatClient :: connectServer(void)
+CChatClient :: connectServer()
 {
 	HRESULT result;
 
-	result = connect (__client_socket, (sockaddr*)&__client_address, sizeof(SOCKADDR_IN));
+	result = connect (__client_socket, (sockaddr*)&__server_address, sizeof(SOCKADDR_IN));
 	if (__client_socket == INVALID_SOCKET)
 	{
 		PRINTE "Connection to the server failed failed:" << WSAGetLastError() <<"\n";

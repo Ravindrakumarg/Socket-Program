@@ -10,7 +10,7 @@
 #include "WinSock.h"
 #include "Windows.h"
 
-#define PRINTE std::cout<<
+#define PRINTE std::cerr<<
 #define PRINTW std::cout<<
 #define PRINTI std::cout<<
 #define PRINTD std::cout<<

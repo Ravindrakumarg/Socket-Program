@@ -26,19 +26,19 @@ CChatClient :: initializeClient(void)
 		return 1;
 	}
 
-	__client_address.sin_family = AF_INET;						/* internet Communication */
-	__client_address.sin_addr.s_addr = inet_addr(SERVER_IP);	/* Server address*/
-	__client_address.sin_port = SERVER_PORT;					/* Server Listening on this port */
-
 	/* Creating client socket */
-	__client_socket = socket (AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	__client_socket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	if (__client_socket == INVALID_SOCKET)
 	{
-		PRINTE "Socket Creation failed:" << WSAGetLastError() <<"\n";
+		PRINTE "Socket Creation failed:" << WSAGetLastError() << "\n";
 		WSACleanup();
 		return 1;
 	}
-	
+
+	__server_address.sin_family = AF_INET;						/* internet Communication */
+	__server_address.sin_addr.s_addr = inet_addr(SERVER_IP);	/* Server address*/
+	__server_address.sin_port = SERVER_PORT;					/* Server Listening on this port */
+
 	PRINTI "Client Socket Created Successfully"<<"\n";
 	return 0;
 }

@@ -50,7 +50,9 @@ void
 CMessageServer :: receive_data()
 {
 	char buf[DEFAULT_BUFLEN];
+
 	memset (buf, ' ', sizeof(buf));
+
 	HRESULT result = recv (__client_socket, buf, DEFAULT_BUFLEN, 0);
 	if ( result < 0 )
 	{
